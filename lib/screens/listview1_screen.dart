@@ -14,7 +14,7 @@ class ListView1Screen extends StatelessWidget {
       body: ListView(
         children:  [
           ...options.map((team) => ListTile(
-             leading: Icon(Icons.arrow_circle_right),
+             leading: const Icon(Icons.arrow_circle_right),
              title: Text(team),
              trailing: const Icon(Icons.arrow_forward_ios_outlined),
           ),
