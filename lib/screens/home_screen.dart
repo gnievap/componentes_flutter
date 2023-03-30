@@ -1,5 +1,6 @@
 import 'package:componentes_flutter/router/app_routes.dart';
 import 'package:componentes_flutter/screens/screens.dart';
+import 'package:componentes_flutter/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -19,7 +20,7 @@ class HomeScreen extends StatelessWidget {
       body: ListView.separated(
         itemBuilder: (context, index) => ListTile(
           title: Text( menuOptions[index].name ),
-          leading: Icon(menuOptions[index].icon),
+          leading: Icon(menuOptions[index].icon, color: AppTheme.primary),
           onTap: (){
             final route = MaterialPageRoute(builder: (context) => const ListView1Screen(),);
             // Destruye el stack de ventanas que tiene la app
